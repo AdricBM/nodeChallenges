@@ -1,0 +1,58 @@
+body
+{
+    font-family: 'Baloo Bhai', cursive,sans-serif;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.submission-form
+{
+    max-width:500px;
+    margin:1rem auto;
+    border:2px solid #7070BB;
+    padding:2rem;
+    border-radius:5px;
+}
+
+label
+{
+    display:block;
+    padding:1rem 0 .25rem;
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight: bolder;
+    color: #3B4856;
+}
+
+input, textarea
+{
+    display:block;
+    width:100%;
+    border:2px solid #2980B9;
+    padding:.5rem;
+    font-size:18px;
+    border-radius:5px;
+    font-family: 'Kodchasan', sans-serif, Helvetica, sans-serif;
+}
+
+#sendBtn
+{
+    border:0;
+    background:#3B4856;
+    padding:.5rem;
+    color:white;
+    margin:1rem 0;
+    width:auto;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:.3s background ease;
+}
+
+#sendBtn:hover
+{
+    background:#00BFC3;
+    color: #3B4856;
+}

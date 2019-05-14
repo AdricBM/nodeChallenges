@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Kodchasan" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>form</title>
+</head>
+<body>
+    <form class="submission-form" action="/formResponse" method="GET">
+        
+        <h1>Registration Form</h1>
+
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="fname">
+        
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="lname">
+        
+        <label for="email">Email adress</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="phone">Telephone</label>
+        <input type="tel" id="phone" name="tel">
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+        <hr>
+        
+        <input type="submit" value="Send" id="sendBtn" name="submit">
+        
+      </form>
+</body>
+</html>
