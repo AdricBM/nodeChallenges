@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+        title Weatherly. Minimalistic Weather App.
+        link(rel="stylesheet", href="/css/semantic.min.css")
+        link(rel="stylesheet", href="/css/index.css")
+        link(href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet")
+
+    body
+        div.ui.grid
+            div.twelve.wide.centered.column
+                div#logo Weather App
+                
+                div#searchbar
+                    div.ui.action.input
+                        input#searchcity(placeholder="Enter a location...", type = "text" name="city")
+                        button(onClick="search()").ui.secondary.button Search
+                
+                div.results
+                    div#temperature 20&deg C
+                    div#city Johannesburg, South Africa
+                    div#description 
+                        span#condition sunny.
+
+        script(type="text/javascript", src="/js/weather.js")
+
+

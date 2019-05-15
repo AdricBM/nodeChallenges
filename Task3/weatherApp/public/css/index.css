@@ -1,0 +1,45 @@
+#logo {
+    font-weight: bold;
+    font-size: 10vh;
+    text-align: center;
+    margin-top: 20%;
+}
+
+#searchbar {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.results {
+    margin-top: 5%;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#temperature {
+    margin-top: 5%;
+    font-size: 12vh;
+}
+
+#description {
+    margin-top: 5vh;
+}
+
+#condition {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 3vh;
+}
+
+#city {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3vh;
+    margin-top: 5%;
+}
+
+body {
+    font-family: 'ABeeZee', sans-serif;
+}
