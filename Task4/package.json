@@ -1,0 +1,20 @@
+{
+  "name": "task4",
+  "version": "1.0.0",
+  "description": "Rest Api",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Adric1/nodeChallenges/Task4"
+  },
+  "author": "Adric",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.0",
+    "mongoose": "^5.5.9",
+    "nodemon": "^1.19.0"
+  }
+}
