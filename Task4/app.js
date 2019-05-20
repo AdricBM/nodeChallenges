@@ -1,12 +1,13 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-require('dotenv/config');
 const bodyParser = require('body-parser');
+require('dotenv/config');
 
 /**
  * import routes
  */
+app.use(bodyParser.json());
 
 const prospectRoutes = require('./routes/prospects');
 
@@ -15,7 +16,7 @@ const prospectRoutes = require('./routes/prospects');
  */
 
  app.use('/prospects',prospectRoutes);
- app.use(bodyParser.json());
+ 
 
 /**
  * Routes
