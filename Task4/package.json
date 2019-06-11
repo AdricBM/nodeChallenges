@@ -1,22 +1,18 @@
 {
   "name": "task4",
   "version": "1.0.0",
-  "description": "Rest Api",
-  "main": "index.js",
+  "description": "Registration API",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Adric1/nodeChallenges/Task4"
+    "start": "node app"
   },
   "author": "Adric",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "dotenv": "^8.0.0",
-    "express": "^4.17.0",
-    "mongoose": "^5.5.9",
-    "nodemon": "^1.19.0"
+    "bower": "^1.8.8",
+    "express": "^4.17.1",
+    "mongoose": "^5.5.14",
+    "pug": "^2.0.3"
   }
 }

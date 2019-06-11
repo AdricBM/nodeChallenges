@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	h1 #{title}
+	form(method='POST', action='/prospects/add')
+		#form-group
+			label Name:
+			input.form-control(name='name', type='text')
+		#form-group
+			label Surname:
+			input.form-control(name='surname', type='text')
+		#form-group
+			label Age:
+			input.form-control(name='age', type='text')
+		#form-group
+			label Subject Of Inquiry:
+			input.form-control(name='soi', type='text')
+		#form-group
+			label Assistant:
+			input.form-control(name='assistant', type='text')
+		input.btn.btn-primary(type='submit', value='Submit')
