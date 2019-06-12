@@ -52,6 +52,15 @@ app.get('/',(req,res)=>{
     });
 });
 
+// Get single prospect
+app.get('/prospect/:id',(req,res)=>{
+    Prospect.findById(req.params.id,(err,prospect)=>{
+        res.render('prospect',{
+            prospect: prospect
+        });
+    });
+});
+
 // Add route
 app.get('/prospects/add',(req,res)=>{
     res.render('add_prospect',{
@@ -75,6 +84,48 @@ app.post('/prospects/add',(req,res)=>{
         }else{
             res.redirect('/');
         }
+    });
+});
+
+// Load edit form
+app.get('/prospect/edit/:id',(req,res)=>{
+    Prospect.findById(req.params.id,(err,prospect)=>{
+        res.render('edit_prospect',{
+            title: 'Edit Prospect',
+            prospect: prospect
+        });
+    });
+});
+
+// Update submit POST route
+app.post('/prospects/edit/:id',(req,res)=>{
+    let prospect = {};
+    prospect.name = req.body.name;
+    prospect.surname = req.body.surname;
+    prospect.age = req.body.age;
+    prospect.soi = req.body.soi;
+    prospect.assistant = req.body.assistant;
+
+    let query = {_id:req.params.id};
+
+    Prospect.update(query, prospect,(err)=>{
+        if(err){
+            console.log(err);
+            return;
+        }else{
+            res.redirect('/');
+        }
+    });
+});
+
+app.delete('/prospect/:id',(req,res)=>{
+    let query ={_id:req.params.id};
+
+    Prospect.remove(query,(err)=>{
+        if(err){
+            console.log(err);
+        }
+        res.send('Success');
     });
 });
 

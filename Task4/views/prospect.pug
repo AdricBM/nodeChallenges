@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	h1= prospect.name
+	br
+	.container
+		h4 surname: #{prospect.surname}
+		h6 ID: #{prospect.id}
+		h6 Age: #{prospect.age}
+		h6 Subject Of Inquiry: #{prospect.soi}
+		h6 Assistant: #{prospect.assistant}
+		h6 Date: #{prospect.date}
+	hr
+	a.btn.btn-primary(href='/prospect/edit/'+prospect._id) Edit
+	a.btn.btn-danger.delete-prospect(href='#', data-id=prospect._id) Delete

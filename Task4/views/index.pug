@@ -4,4 +4,5 @@ block content
 	h1 #{title}
 	ul.list-group
 		each prospect, i in prospects
-			li.list-group-item= prospect.name
+			li.list-group-item
+				a(href='/prospect/'+prospect._id)= prospect.name
