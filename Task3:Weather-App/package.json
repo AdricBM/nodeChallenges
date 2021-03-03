@@ -9,7 +9,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "nodemon": "^1.19.0",
-    "pug": "^2.0.3"
+    "pug": "^3.0.1"
   },
   "scripts": {
     "start": "nodemon --watch src/ --watch public -e js,pug,sass"
